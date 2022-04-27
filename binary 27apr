@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    //operator aritmatika
+    int a = 13;
+    int b = 2;
+    
+    int hasiltambah = a + b; 
+    int hasilkurang = a - b; 
+    int hasilbagi = a / b;
+    int hasilkali = a * b;
+    int sisabagi = a % b;
+    
+    cout<<hasiltambah<<endl;
+    cout<<hasilkurang<<endl;
+    cout<<hasilbagi<<endl;
+    cout<<hasilkali<<endl;
+    cout<<sisabagi<<endl;
+    return 0;
+}
