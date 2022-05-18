@@ -1,0 +1,38 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+    int a,b ;
+    float nilai;
+    string c [100] = {"","km","hm","dam","m","dm","cm","mm"} ;
+    cout<<"pilih satuan awal yang ingin di konversi"<<endl;
+    cout<<"1.km"<<endl;
+    cout<<"2.hm"<<endl;
+    cout<<"3.dam"<<endl;
+    cout<<"4.m"<<endl;
+    cout<<"5.dm"<<endl;
+    cout<<"6.cm"<<endl;
+    cout<<"7.mm"<<endl;
+    cout<<"pilih satuan awal dengan memasukan angka diatas =";
+    cin>>a;
+    cout<<"masukan angka yang ingin dikonversikan =" ;cin>>nilai;
+    cout<<"pilih satuan akhir"<<endl;
+    cout<<"1.km"<<endl;
+    cout<<"2.hm"<<endl;
+    cout<<"3.dam"<<endl;
+    cout<<"4.m"<<endl;
+    cout<<"5.dm"<<endl;
+    cout<<"6.cm"<<endl;
+    cout<<"7.mm"<<endl;
+    cout<<"pilih satuan akhir dengan memasukan angka diatas =";
+    cin>>b;
+    if(a<b){
+        int temp = b-a;
+        cout<<"Hasil: "<<nilai*pow(10,temp)<<" "<<c[b];
+    }else if(a>b){
+        int temp = a-b;
+        cout<<"Hasil: "<<nilai/pow(10,temp)<<" "<<c[b];
+    }else if(a==b){
+        cout<<"Hasil: "<<nilai<<" "<<c[a];
+    }
+}
